@@ -10,12 +10,12 @@ def main():
 
     model.train(
         data=str(DATA_YAML),
-        epochs=5,          
+        epochs=50,          
         imgsz=640,
-        batch=8,           # lower it if you run out of memory
+        batch=16,           
         device=0,      # change to 0 if you have a working CUDA GPU
         project=str(BASE_DIR / "runs"),
-        name="crater_test",
+        name="crater_v1_50epochs",
         seed=42,
     )
 
