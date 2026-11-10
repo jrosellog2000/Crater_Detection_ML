@@ -10,7 +10,7 @@ def main():
 
     model.train(
         data=str(DATA_YAML),
-        epochs=5,          # short test run first; later 50-100
+        epochs=5,          
         imgsz=640,
         batch=8,           # lower it if you run out of memory
         device=0,      # change to 0 if you have a working CUDA GPU
