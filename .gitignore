@@ -1,7 +1,9 @@
-# Dataset and outputs
+# Dataset
 data/
-runs/
-*.pt
+
+# Training outputs: keep runs and best.pt, skip the rest
+runs/**/weights/last.pt
+/yolov8n.pt
 
 # Python
 venv/
